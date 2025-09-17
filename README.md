@@ -21,30 +21,33 @@ This project makes use of MITRE ATT&CK® - [ATT&CK Terms of Use](https://attack.
 #### Recommended Dependency Versions
 
 At least the following:
-Ubuntu         24.04.3 LTS
-Docker         28.4.0, build d8eb465
-Docker Compose v2.39.2
-Node           v24.1.0
-npm            11.3.0
-Python         3.12.3  # only used as a basic HTTP server for the build output
+- Ubuntu         24.04.3 LTS
+- Docker         28.4.0, build d8eb465
+- Docker Compose v2.39.2
+- Node           v24.1.0
+- npm            11.3.0
+- Python         3.12.3  # only used as a basic HTTP server for the build output
 
 #### Development
 
-`npm install`
-`npm run dev -w website -- --host`
+- `npm install` 
+- `npm run dev -w website -- --host`
 
-- binds to all interfaces (remove `-- --host` to just use locally)
-- hot-reloads on edit
+binds to all interfaces (remove `-- --host` to just use locally)
+
+hot-reloads on edit
 
 #### Building
 
-`npm install`
-`npm run build -w website`
-`python3 -m http.server -d ./website/dist/ 8080`
+- `npm install`
+- `npm run build -w website`
+- `python3 -m http.server -d ./website/dist/ 8080`
 
-- builds to website/dist
-- binds to port 8080 in this example
-- is 100% frontend-only and can be statically served
+builds to website/dist
+
+binds to port 8080 in this example
+
+is 100% frontend-only and can be statically served
 
 #### Docker
 
@@ -55,21 +58,26 @@ From the playbook directory:
 ### Countermeasure Editor
 
 Located in /editor.  
+
 Allows editing the fields of a Countermeasure in a structured manner - versus using Markdown, which currently does not cover all possible fields.
 
 #### Development
 
-`npm run dev -w editor -- --host`
+- `npm install`
+- `npm run dev -w editor -- --host`
 
-- binds to all interfaces (remove `-- --host` to just use locally)
-- hot-reloads on edit
+binds to all interfaces (remove `-- --host` to just use locally)
+
+hot-reloads on edit
 
 #### Building
 
-`npm run build -w editor`
+- `npm install`
+- `npm run build -w editor`
 
-- builds to editor/dist
-- is 100% frontend-only and can be statically served
+builds to editor/dist
+
+is 100% frontend-only and can be statically served
 
 #### Docker
 
@@ -79,20 +87,24 @@ Allows editing the fields of a Countermeasure in a structured manner - versus us
 ### API
 
 Located in /api.  
+
 Playbook-NG as an API - a minimal server that takes in a list of observed Techniques, and returns a playbook of Countermeasures in various formats.
 
 #### Development
 
-`npm run dev -w api`
+- `npm install`
+- `npm run dev -w api`
 
-- binds to all interfaces
-- does **not** hot-reload on edit
+binds to all interfaces
+  
+does **not** hot-reload on edit
 
 #### Building
 
-`npm run build -w api`
+- `npm install`
+- `npm run build -w api`
 
-- builds to api/dist
+builds to api/dist
 
 #### Docker
 
@@ -101,21 +113,23 @@ Playbook-NG as an API - a minimal server that takes in a list of observed Techni
 
 ### Metrics
 
-Located in /metrics.  
+Located in /metrics. 
+
 An optional information collection add-on to the website. Records IDs present in exported playbooks by accepting POSTs and sending their body content to a specified remote syslog server.
 
 #### Development
 
-`go run metrics/metrics.go`
+- `go run metrics/metrics.go`
 
-- binds to all interfaces
-- does **not** hot-reload on edit
+binds to all interfaces
+
+does **not** hot-reload on edit
 
 #### Building
 
-`go build -o metrics/metrics metrics/metrics.go`
+- `go build -o metrics/metrics metrics/metrics.go`
 
-- builds to single executable: metrics/metrics
+builds to single executable: metrics/metrics
 
 #### Docker
 
@@ -126,7 +140,8 @@ An optional information collection add-on to the website. Records IDs present in
 
 - `npm run format`
 - `npm run lint`
-- These only handle JS/TS/CSS/HTML, no Golang, Bash, etc
+
+These only handle JS/TS/CSS/HTML, no Golang, Bash, etc
 
 ## Acknowledgements
 
@@ -149,6 +164,7 @@ COUN7ER, including any associated information, playbook, strategies, countermeas
 Users assume all risks from the use of COUN7ER, and without limiting the foregoing, users are responsible for any actions they take on systems and devices. In no event shall the United States Government, its employees, or its contractors or subcontractors be liable for any damages including, but not limited to, direct, indirect, special or consequential damages, arising out of, resulting from, or in any way connected with COUN7ER or its use; whether or not based upon warranty, contract, tort, or otherwise; whether or not arising out of negligence; and whether or not injury was sustained from, or arose out of the results of, or reliance upon COUN7ER.
 
 References to any specific entity, commercial product, process, data format or service by trade name, trademark, manufacturer, or otherwise, do not constitute or imply an endorsement, recommendation, or favoring by CISA or the United States Government. All trademarks are the property of their respective owners. Users acknowledge that information within COUN7ER may not constitute the most up-to-date guidance or technical information and COUN7ER is not intended to, and does not constitute advice for compliance, regulatory, or legal purposes. Users should confer with their respective advisors and subject matter experts to obtain advice based on their individual circumstances.
+
 
 
 
