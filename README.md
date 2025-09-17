@@ -21,7 +21,6 @@ This project makes use of MITRE ATT&CK® - [ATT&CK Terms of Use](https://attack.
 #### Recommended Dependency Versions
 
 At least the following:
-- Ubuntu         24.04.3 LTS
 - Docker         28.4.0, build d8eb465
 - Docker Compose v2.39.2
 - Node           v24.1.0
@@ -164,6 +163,7 @@ COUN7ER, including any associated information, playbook, strategies, countermeas
 Users assume all risks from the use of COUN7ER, and without limiting the foregoing, users are responsible for any actions they take on systems and devices. In no event shall the United States Government, its employees, or its contractors or subcontractors be liable for any damages including, but not limited to, direct, indirect, special or consequential damages, arising out of, resulting from, or in any way connected with COUN7ER or its use; whether or not based upon warranty, contract, tort, or otherwise; whether or not arising out of negligence; and whether or not injury was sustained from, or arose out of the results of, or reliance upon COUN7ER.
 
 References to any specific entity, commercial product, process, data format or service by trade name, trademark, manufacturer, or otherwise, do not constitute or imply an endorsement, recommendation, or favoring by CISA or the United States Government. All trademarks are the property of their respective owners. Users acknowledge that information within COUN7ER may not constitute the most up-to-date guidance or technical information and COUN7ER is not intended to, and does not constitute advice for compliance, regulatory, or legal purposes. Users should confer with their respective advisors and subject matter experts to obtain advice based on their individual circumstances.
+
 
 
 
