@@ -1,4 +1,4 @@
 beautifulsoup4==4.13.3
-Markdown==3.7
-soupsieve==2.6
+Markdown==3.8.1
+soupsieve==2.9
 typing_extensions==4.13.0
